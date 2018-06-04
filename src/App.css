@@ -1,0 +1,86 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.pcty-btn {
+  background-color: #ddd;
+  border-color: #ccc;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+
+.pcty-btn-green {
+  background-color: #64aa64;
+  border-color: #5a995a;
+  color: white;
+}
+.pcty-btn-green:hover {
+  background-color: #5a995a;
+}
+
+table.pcty-employee-table {
+  background-color: #eee;
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+  border-radius: 3px;
+  margin-left: 30px;
+}
+table.pcty-employee-table > thead > th {
+  border: 1px solid #ddd;
+  text-align: center;
+  width: 200px;
+}
+
+tr.pcty-employee-row {
+  border: 1px solid #ddd;
+}
+tr.pcty-employee-row td {
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+table.pcty-dependent-table {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+  border-radius: 3px;
+  margin-left: 30px;
+}
+table.pcty-dependent-table > thead > th {
+  border: 1px solid #ddd;
+  text-align: center;
+  width: 200px;
+}
+
+.no-padding {
+  padding: 0;
+}
