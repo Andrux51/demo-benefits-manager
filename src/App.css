@@ -51,6 +51,7 @@
 table.pcty-employee-table {
   width: 95%;
   margin: 20px auto;
+  text-align: left;
 }
 
 .no-padding {

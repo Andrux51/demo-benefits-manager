@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Table } from 'react-bootstrap';
-import EmployeeRow from './EmployeeRow.component';
 import EmployeeModal from './EmployeeModal.component';
+import EmployeeRow from './EmployeeRow.component';
 
 export default class EmployeeTable extends Component {
     constructor(props) {
@@ -67,12 +67,5 @@ export default class EmployeeTable extends Component {
                 />
             </div>
         )
-    }
-
-    tableStyle = {
-        backgroundColor:'#eee',
-        border: '1px solid #ccc',
-        borderRadius: 3,
-        marginLeft: 30
     }
 }

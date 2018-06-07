@@ -7,10 +7,8 @@ export default class EmployeeModal extends Component {
         super(props);
 
         const newEmployee = {
-            // reasonable consideration for things like SSN, birth date, etc.
-            // could assert SSN's to be unique, or something
             benefitsBaseCost: AppConstants.EMPLOYEE_BENEFITS_COST,
-            benefitsTotalCost: '',
+            benefitsTotalCost: 0, // value will be calculated
             firstName: '',
             lastName: '',
             payPerPeriod: AppConstants.EMPLOYEE_PAY_PER_PERIOD,
@@ -35,7 +33,6 @@ export default class EmployeeModal extends Component {
                     <Modal.Title>Add/Edit Employee</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    {/* <EmployeeForm /> */}
                 </Modal.Body>
                 <Modal.Footer>
                     <Button className="btn-primary" onClick={() => this.props.onSave(this.state.employee)}>Save</Button>
