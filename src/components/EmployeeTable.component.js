@@ -1,32 +1,34 @@
 import React, { Component } from 'react';
 import { Table } from 'react-bootstrap';
-import AppConstants from '../helpers/app.constants';
 import EmployeeRow from './EmployeeRow.component';
+import EmployeeModal from './EmployeeModal.component';
 
 export default class EmployeeTable extends Component {
     constructor(props) {
         super(props);
         this.state = {
             employees: [],
-            lastUsedId: 0
+            lastUsedId: 0,
+            showModal: false,
         };
     }
 
-    addEmployee = () => {
-        const newEmployee = {
-            // reasonable consideration for things like SSN, birth date, etc.
-            // could assert SSN's to be unique, or something
-            benefitsBaseCost: AppConstants.EMPLOYEE_BENEFITS_COST,
-            firstName: '',
-            id: +1+this.state.lastUsedId,
-            lastName: '',
-            payPerPeriod: AppConstants.EMPLOYEE_PAY_PER_PERIOD,
-            dependents: []
-        };
-
+    addEmployee = employee => {
         this.setState(prevState => ({
-            employees: [...prevState.employees, newEmployee],
-            lastUsedId: newEmployee.id
+            employees: [...prevState.employees, employee],
+            lastUsedId: employee.id
+        }));
+    };
+
+    closeModal = e => {
+        this.setState(() => ({
+            showModal: false
+        }));
+    };
+
+    openModal = employee => {
+        this.setState(() => ({
+            showModal: true
         }));
     };
 
@@ -36,7 +38,7 @@ export default class EmployeeTable extends Component {
                 <button
                     className="pcty-btn pcty-btn-green"
                     type="button"
-                    onClick={this.addEmployee}
+                    onClick={() => this.openModal()}
                 >
                     Add New Employee
                 </button>
@@ -49,12 +51,18 @@ export default class EmployeeTable extends Component {
                     </thead>
                     <tbody>
                         {
-                            this.state.employees.map(employee => {
-                                return <EmployeeRow key={employee.id} employee={employee} />
+                            this.state.employees.map((employee, i) => {
+                                return <EmployeeRow key={i} employee={employee} openModal={() => this.openModal(employee)} />
                             })
                         }
                     </tbody>
                 </Table>
+
+                <EmployeeModal
+                    onClose={this.closeModal}
+                    onSave={this.addEmployee}
+                    show={this.state.showModal}
+                />
             </div>
         )
     }

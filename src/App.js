@@ -3,17 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 
 import EmployeeTable from './components/EmployeeTable.component';
-import DependentModal from './components/DependentModal.component';
 
 class App extends Component {
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            dependentModalShown: false,
-        };
-    }
-
     render() {
         return (
             <div className="App">
@@ -25,9 +16,6 @@ class App extends Component {
                     Use the table below to add and manage employees and their dependents.
                 </p>
                 <EmployeeTable />
-                {this.state.dependentModalShown &&
-                    <DependentModal />
-                }
             </div>
         );
     }
