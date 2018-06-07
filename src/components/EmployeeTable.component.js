@@ -44,10 +44,12 @@ export default class EmployeeTable extends Component {
                 </button>
                 <Table bordered className="pcty-employee-table">
                     <thead>
-                        <th>Employee ID</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Actions</th>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Benefits Cost</th>
+                            <th>Actions</th>
+                        </tr>
                     </thead>
                     <tbody>
                         {
