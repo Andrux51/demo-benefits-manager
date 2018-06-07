@@ -6,7 +6,9 @@ export default class EmployeeRow extends Component {
             <tr className="pcty-employee-row">
                 <td>{this.props.employee.firstName}</td>
                 <td>{this.props.employee.lastName}</td>
+                <td>{this.props.employee.dependents.length}</td>
                 <td>{this.props.employee.benefitsTotalCost}</td>
+                <td>{this.props.employee.payPerPeriodTotal}</td>
                 <td>
                     <button className="pcty-btn no-padding"
                         onClick={this.props.openModal}
