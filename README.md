@@ -1,7 +1,7 @@
-# Paylocity Interview - Benefits Manager
+# Interview - Benefits Manager Proof of Concept
 
 ## Coding Challenge Overview:
-Each of our Paylocity product teams operates like a small startup, empowered to deliver business value in whatever way they see fit.   Because our teams are close knit and fast moving it is imperative that you are able to work collaboratively with your fellow developers.   
+Each of our product teams operates like a small startup, empowered to deliver business value in whatever way they see fit. Because our teams are close knit and fast moving it is imperative that you are able to work collaboratively with your fellow developers.   
 
 This coding challenge is designed to allow you to demonstrate your abilities and discuss your approach to design and implementation with your potential colleagues. You are free to use whatever technologies you prefer but please be prepared to discuss the choices you’ve made.  
 
