@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Table } from 'react-bootstrap';
 import AppConstants from '../helpers/app.constants';
 import EmployeeRow from './EmployeeRow.component';
 
@@ -39,7 +40,7 @@ export default class EmployeeTable extends Component {
                 >
                     Add New Employee
                 </button>
-                <table className="pcty-employee-table">
+                <Table bordered className="pcty-employee-table">
                     <thead>
                         <th>Employee ID</th>
                         <th>First Name</th>
@@ -53,7 +54,7 @@ export default class EmployeeTable extends Component {
                             })
                         }
                     </tbody>
-                </table>
+                </Table>
             </div>
         )
     }

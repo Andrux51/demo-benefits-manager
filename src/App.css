@@ -48,37 +48,8 @@
 }
 
 table.pcty-employee-table {
-  background-color: #eee;
-  border: 1px solid #ddd;
-  border-collapse: collapse;
-  border-radius: 3px;
-  margin-left: 30px;
-}
-table.pcty-employee-table > thead > th {
-  border: 1px solid #ddd;
-  text-align: center;
-  width: 200px;
-}
-
-tr.pcty-employee-row {
-  border: 1px solid #ddd;
-}
-tr.pcty-employee-row td {
-  border: 1px solid #ccc;
-  text-align: left;
-}
-
-table.pcty-dependent-table {
-  background-color: white;
-  border: 1px solid #ddd;
-  border-collapse: collapse;
-  border-radius: 3px;
-  margin-left: 30px;
-}
-table.pcty-dependent-table > thead > th {
-  border: 1px solid #ddd;
-  text-align: center;
-  width: 200px;
+  width: 95%;
+  margin: 20px auto;
 }
 
 .no-padding {

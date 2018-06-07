@@ -22,8 +22,9 @@ class App extends Component {
                     <h1 className="App-title">Welcome to your Benefits Center</h1>
                 </header>
                 <p className="App-intro">
-                    <EmployeeTable />
+                    Use the table below to add and manage employees and their dependents.
                 </p>
+                <EmployeeTable />
                 {this.state.dependentModalShown &&
                     <DependentModal />
                 }
