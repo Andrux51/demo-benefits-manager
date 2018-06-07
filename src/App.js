@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-
 import EmployeeTable from './components/EmployeeTable.component';
 
 class App extends Component {
@@ -9,7 +7,7 @@ class App extends Component {
         return (
             <div className="App">
                 <header className="App-header">
-                    <img src={logo} className="App-logo" alt="logo" />
+                    <img src="https://www.paylocity.com/wp-content/themes/paylocity/library/images/footer-logo.png" className="App-logo" alt="logo" />
                     <h1 className="App-title">Welcome to your Benefits Center</h1>
                 </header>
                 <p className="App-intro">
